@@ -1,0 +1,1298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-body{
+    display: flex;
+    justify-content: start;
+    width:100%;
+    height: 747px;
+    background-image: url(../img/header/bg.png);
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.section-header{
+    width: 1170px;
+    height: 101px;
+    display: flex;
+    align-self: center;
+    justify-content:space-between ;
+}
+
+.section-header__logo{
+    margin-top: 39px;
+    margin-bottom: 36px;
+}
+
+.section-header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.section-header-nav__link{
+    width: 134px;
+    height:28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 36px 0;
+    line-height:10px;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+
+.header-mobile{
+    width: 280px;
+    height: 56px;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.header-mobile__logo{
+    width: 130px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-mobile__logo_dark{
+    width: 67px;
+    height: 14px;
+}
+
+.header-mobile__logo_white{
+    width: 34px;
+    height: 14px;
+}
+
+.header__line{
+    display: flex;
+    align-self:center;
+    justify-content: start;
+    width: 1170px;
+    height: 0;
+    border-bottom:1px solid rgba(186, 187, 197, 1) ;
+    
+}
+
+.section-header-nav__link:hover::after{
+    top: 62px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 3px;
+}
+
+.section-header-nav__link:active::after{
+    top: 62px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(231, 20, 20, 1);
+    width: 100%;
+    height: 3px;
+}
+
+.section-header-nav__link:active{
+    color: rgba(231, 20, 20, 1);
+}
+
+.header-banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    color: rgba(255, 255, 255, 1);
+    margin-top: 130px;
+
+}
+
+.header-banner__title{
+    width: 1170px;
+    height: 150px;
+    font-size: 64px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-banner__text{
+    width: 1170px;
+    height: 56px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 31px;
+}
+
+.header-banner__button{
+    width: 370px;
+    height: 80px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 67, 67, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    transition: .4s;
+}
+
+.header-banner__button:hover{
+    background-color: rgba(231, 20, 20, 1);
+}
+
+.header-banner__button:active{
+    background-color: rgba(255, 67, 67, 1);
+    box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
+    transition: .1s;
+}
+
+.features{
+    margin-top: 116px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 31px;
+    margin-top: 88px;
+}
+
+
+.features-card{
+    width: 370px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features-card__title{
+    width: 370px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    margin-top: 29px;
+    text-transform: uppercase;
+    color: rgba(45, 48, 51, 1);
+}
+.features-card__description{
+    width: 370px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(108, 114, 121, 1);
+}
+
+.project-items{
+    display: flex;
+    justify-content: center;    
+    width: 1510px;
+    height: 678px;
+    margin: 0 auto;
+    margin-top: 133px; 
+    flex-wrap: wrap;
+}
+
+.project-item-card{
+    display: flex;
+    width: 376px;
+    height: 340px;
+    background-size: cover;
+    justify-content: end;
+    align-items: center;    
+    flex-direction: column;
+}
+
+
+.project-item-card-pic{
+    display: flex;
+    position: absolute;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.project-item-card-text{
+    width: 376px;
+    height: 338px;
+    display: flex;
+    position: relative;
+    opacity: 0;
+    
+}
+
+.project-item-card-text:hover{
+    background-color: rgba(255, 67, 67, 0.8);
+    opacity: 1;
+    transition: .3s;
+}
+
+.project-item-card-text:active{
+    background-color: rgba(185, 12, 12, 0.8);
+}
+
+
+.project-item-card-pic{
+    width: 380px;
+    height: 340px;
+    display: flex;
+}
+
+.project-item-card__title{
+    width: 380px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    margin-top: 110px;
+    color: rgb(255, 255, 255, 1);
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.project-item-card__text{
+    width: 380px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: rgb(255, 255, 255, 1);
+    position: absolute;
+    margin-top: 190px;
+}
+
+.team{
+    margin: 0 auto;
+    width: 1170px;
+    height: 619px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 114px;
+}
+
+.team-card{
+    width: 270px;
+    height: 619px;
+}
+
+.team-card__title{
+    width: 270px;
+    height: 30px;
+    display: flex;
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: rgba(45, 48, 51, 1);
+}
+
+.team-card__text{
+    width: 270px;
+    height: 21px;
+    display: flex;
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgba(255, 67, 67, 1);
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.team-card__description{
+    width: 270px;
+    height: 169px;
+    display: flex;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(108, 114, 121, 1);
+    margin-top: 18px;
+}
+
+.team-card-icons{
+    width: 127px;
+    height: 39px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 38px;
+}
+
+.team-card-icons__img:hover{
+    opacity: 0.9;
+    box-shadow:0px 0px 5px rgb(194, 193, 193);
+    transition: .3s;
+}
+
+.testimonials{
+    width: 1510px;
+    height: 535px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 114px;
+    flex-direction: column;
+}
+
+.testimonials-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonials__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-text{
+    width: 770px;
+    height: 490px;
+    background-color: rgba(92, 50, 73, 1);
+    flex-direction: column;
+    display: flex;
+}
+
+.testimonials-text__title{
+    margin-left: 129px;
+    margin-top: 116px;
+    width: 471px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: capitalize;
+}
+
+.testimonials-text__description{
+    margin-left: 129px;
+    width: 470px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+
+.testimonials-dots{
+    width: 170px;
+    height: 124px;
+    margin-top: 31px;
+    display: flex;
+    align-self: center;
+    gap: 25px;
+}
+
+.download{
+    width: 1170px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 114px;
+    flex-direction: column;
+    margin: 114px auto;
+
+}
+
+.download__title{
+    width: 1170px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.download__text{
+    width: 1170px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+}
+
+.download__button{
+    width: 370px;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 67, 67, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    transition: .4s;
+}
+
+.download__button:hover{
+    background-color: rgba(231, 20, 20, 1);
+}
+
+.download__button:active{
+    background-color: rgba(255, 67, 67, 1);
+    box-shadow: 4px 4px 30px rgba(255, 67, 67, 1);
+    transition: .1s;
+}
+
+.footer{
+    width: 100%;
+    height: 340px;
+    margin: 0 auto;
+
+}
+
+.footer-body{
+    width: 100%;
+    height: 250px;
+    background-color:rgba(53, 60, 101, 1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-container-location{
+    width: 370px;
+    height: 71px;
+    margin-top: 71px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Raleway';
+}
+
+.footer-container-location__title, .footer-container-share__title, .footer-container-about__title{
+    width: 370px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:  rgb(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container-location__text{
+    width: 370px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container-share{
+    width: 370px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 71px;
+    font-family: 'Raleway';
+
+}
+
+
+.footer-container-share-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.footer-container-share-icons__img:hover{
+    opacity: 0.9;
+    box-shadow:0px 0px 5px rgb(211, 210, 210);
+    transition: .3s;
+}
+
+.footer-container-about{
+    width: 370px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 71px;
+    font-family: 'Raleway';
+}
+
+.footer-container-about__text{
+    width: 370px;
+    height: 63px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255, 1);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.footer-copyright{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(44, 49, 84, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright__text{
+    width: 370px;
+    height: 42px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.footer-copyright__text_gray{
+    color: rgba(128, 128, 128, 1);
+}
+
+.footer-copyright__text_white{
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1024px){
+    html{
+        width: 1024px;
+    }
+
+    *{
+        box-sizing:border-box
+    }
+
+    .section-header__logo{
+        width:  186px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .header-mobile{
+        width: 100%;
+        display: none;
+        align-self: start;
+    }
+
+    .header, .header-body{
+        width: 100%;
+        height: 768px;
+    }
+
+    .section-header{
+        width: 100%;
+    }
+
+    .section-header-nav{
+        width: 566px;
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+    }
+
+    .section-header-nav__link{
+        width: 112px;
+        height: 28px;
+        font-size: 12px;
+
+    }
+
+    .header__line{
+        display: flex;
+        width: 95%;
+    }
+
+    .header-banner{
+        width: 100%;
+        margin-top: 157px;
+    }
+
+    .header-banner__button{
+        width: 314px;
+        height: 80px;
+        margin-top: 90px;
+
+    }
+
+    .header-banner__title{
+        font-size: 48px;
+        width: 90%;
+        height: 112px;
+    }
+
+    .header-banner__text{
+        font-size: 18px;
+        margin-top: 61px;
+        width: 90%;
+        height: 42px;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-top: 78px;
+        
+    }
+
+    .features-card{
+        width: 314px;
+        height: 237px;
+    }
+
+    .features-card__img img{
+        width: 85px;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features-card__title{
+        width: 315px;
+        height: 60px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .features-card__description{
+        width: 315px;
+        height: 64px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .features-cards-container{
+        margin: 0 auto;
+        width: 984px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .project-items{
+        width: 1024px;
+        height: 460px;
+    }
+
+    .project-item-card, .project-item-card-text, .project-item-card-pic, .project-item-card__img {
+        width: 255px;
+        height: 230px;
+        
+    }
+
+    .project-item-card__title{
+        width: 257px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 75px;
+        
+    }
+
+    .project-item-card__text{
+        width: 257px;
+        height: 16px;
+        font-size: 14px;
+        margin-top: 128px;
+    }
+
+    .project-item-card-text{
+        width: 253px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        align-self: center;
+    }
+
+    .team{
+        width: 100%;
+        height: 520px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .team-cards{
+        width: 227px;
+        height: 520px;
+    }
+
+    .team-card__img img{
+        width: 227px;
+        height: 227px;
+    }
+
+    .team-card__title{
+        width: 227px;
+        font-size: 18px;
+        height: 25px;
+        margin-top: 25px;
+    }
+
+    .team-card__text{
+        width: 227px;
+        height: 16px;
+        font-size: 14px;
+        margin-top: 5px;
+    }  
+    
+    .team-card__description{
+        width: 227px;
+        height: 128px;
+        font-size: 14px;
+        margin-top: 22px;
+        font-weight: 400;
+        
+    }
+
+    .team-card-icons{
+        width: 140px;
+        margin-top: 40px;
+        gap: 5px;
+        justify-content: start;
+    }
+
+    .team-card-icons img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .testimonials{
+        width: 100%;
+        height: 365px;
+        margin-top: 78px;
+    }
+
+    .testimonials-container{
+        width: 100%;
+    }
+
+    .testimonials__img img{
+        width: 502px;
+        height: 332px;
+
+    }
+
+    .testimonials-text{
+        width: 522px;
+        height: 332px;
+        padding-top: 48px;
+        padding-left: 88px;
+    }
+
+    .testimonials-text__title{
+        width: 330px;
+        height: 156px;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .testimonials-text__description{
+        width: 330px;
+        height: 19px;
+        margin: 0;
+    }
+
+    .testimonials-dots{
+        width: 150px;
+        height: 10px;
+        margin-top: 24px;
+    }
+
+    .testimonials-dots img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .download{
+        width: 100%;
+        height: 204px;
+        margin: 78px 0;
+    }
+
+    .download__title{
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .download__text{
+        width: 100%;
+        height: 16px;
+        font-size: 14px;
+    }
+
+    .download__button{
+        width: 314px;
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .footer{
+        height: 230px;
+    }
+
+    .footer-container-location{
+        width: 315px;
+        height: 50px;
+    }
+
+    .footer-container-location__title, .footer-container-location__text, .footer-container-share__title, .footer-container-about__title{
+        width: 315px;
+        height: 16px;
+        font-size: 14px;
+    }
+    .footer-container-share{
+        width: 314px;
+        height: 82px;
+
+    }
+
+    .footer-container-share-icons{
+        gap: 22px;
+    }
+
+    .footer-container-share-icons img{
+        width: 33px;
+        height: 33px;
+    }
+
+    .footer-container-about{
+        width: 315px;
+        height: 80px;
+    }
+
+    .footer-container-about__text{
+        width: 315px;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .footer-body{
+        gap: 20px;
+    }
+
+    .footer-copyright{
+        height: 60px;
+    }
+    
+    .footer-copyright__text{
+        width: 314px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){ 
+
+    html{
+        width: 100%;
+    }
+    
+    *{
+        box-sizing:border-box
+    }
+
+    .header-mobile{
+        width: 100%;
+        display: flex;
+        align-self: start;
+        padding: 0 20px;
+    }
+
+    .header, .header-body{
+        width: 100% ;
+        height: 574px;
+    }
+
+    .section-header{
+        display: none;
+    }
+
+    .section-header-nav{
+        display: none;
+    }
+
+    .header__line{
+        display: none;
+    }
+
+    .header-banner{
+        margin-top: 50px;
+    }
+
+    .header-banner__button{
+        width: 280px;
+        height: 60px;
+        margin-top: 50px;
+
+    }
+
+    .header-banner__title{
+        font-size: 36px;
+        width: 280px;
+        height: 210px;
+    }
+
+    .header-banner__text{
+        font-size: 14px;
+        margin-top: 32px;
+        width: 280px;
+    }
+
+    .features{
+        margin-top: 40px;
+    }
+
+    .features-card{
+        width: 280px;
+        height: 223px;
+    }
+
+    .features-card__img img{
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features-card__title{
+        width: 280px;
+        height: 53px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .features-card__description{
+        width: 280px;
+        height: 80px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .features-cards-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 41px;
+        gap: 41px;
+    }
+
+    .project-items{
+        margin: 0 auto;
+        margin-top: 35px;
+        width: 320px;
+        height: 576px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .project-item-card, .project-item-card-text, .project-item-card-pic, .project-item-card__img {
+        width: 159px;
+        height: 144px;
+        flex-wrap: wrap;
+    }
+    .project-item-card-pic{
+        
+    }
+    .project-item-card__title{
+        width: 159px;
+        height: 25px;
+        font-size: 18px;
+        margin-top: 47px;
+    }
+
+    .project-item-card__text{
+        width: 159px;
+        height: 16px;
+        font-size: 14px;
+        margin-top: 76px;
+    }
+
+    .project-item-card-text{
+        width: 150px;
+        height: 144px;
+        border:2px solid white;
+        
+    }
+
+    .team{
+        width: 280px;
+        height: 2252px;
+        flex-wrap: wrap;
+        gap: 56px;
+        margin-top: 35px;
+    }
+
+    .team-card{
+        width: 280px;
+        height: 521px;
+
+    }
+
+    .team-card__img img{
+        width: 280px;
+        height: 227px;
+        object-fit: cover;
+    }
+
+    .team-card__title{
+        width: 280px;
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .team-card__text{
+        width: 280px;
+        height: 16px;
+        font-size: 14px;
+    }  
+    
+    .team-card__description{
+        width: 280px;
+        height: 96px;
+        font-size: 14px;
+        margin-top: 38px;
+    }
+
+    .team-card-icons{
+        width: 140px;
+        margin-top: 55px;
+    }
+
+    .testimonials{
+        width: 320px;
+        height: 570px;
+
+    }
+
+    .testimonials-container{
+        flex-wrap: wrap;
+    }
+
+    .testimonials__img img{
+        width: 320px;
+        height: 212px;
+    }
+
+    .testimonials-text{
+        width: 320px;
+        height:326px;
+    }
+
+    .testimonials-text__title{
+        width: 275px;
+        height: 206px;
+        margin: 0 25px 0 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .testimonials-text__description{
+        width: 275px;
+        height: 25px;
+        font-size: 12px;
+        margin: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .testimonials-dots{
+        width: 130px;
+        height: 10px;
+        margin-top: 23px;
+        gap: 20px;
+    }
+
+    .testimonials-dots img{
+        width: 10px;
+
+    }
+
+    .download{
+        width: 280px;
+        height: 204px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .download__title{
+        width: 280px;
+        height: 80px;
+        font-size: 18px;
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .download__text{
+        width: 280px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: 3px;
+        text-align: center;
+    }
+
+    .download__button{
+        width: 280px;
+        height: 80px;
+        font-size: 18px;
+        margin-top: 13px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 540px;
+        margin-top: 45px;
+    }
+
+    .footer-body{
+        height: 450px;
+        flex-direction: column;
+        gap:60px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .footer-container-location{
+        width: 280px;
+        height: 66px;
+        margin-top: 34px;
+    }
+    
+    .footer-container-location__title, .footer-container-location__text, .footer-container-about__title, .footer-container-share__title {
+        width: 280px;
+        height: 16px;
+        font-size: 14px;
+    }
+
+    .footer-container-share{
+        width: 279px;
+        height: 85px;
+        margin-top: 10px;
+    }
+
+    .footer-container-share-icons img{
+        width: 33px;
+    }
+
+    .footer-container-share-icons{
+        gap: 16px;
+    }
+
+    .footer-container-about{
+        width: 279px;
+        height: 102px;
+        margin: 0;
+    }
+
+    .footer-container-about__text{
+        width: 279px;
+        height: 48px;
+        font-size: 14px;
+        margin-top: 38px;
+    }
+
+    .footer-copyright__text{
+        width: 280px;
+        height: 32px;    
+        font-size: 14px;
+    }
+ }
