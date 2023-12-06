@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACTIVE BOX</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/sass/style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
@@ -19,11 +19,11 @@
                     <img src="./src/img/header/logo/ACTIVEBOX (1).svg" alt="">
                 </div>
                 <nav class="section-header-nav">
-                    <a class="section-header-nav__link" href="">features</a>
-                    <a class="section-header-nav__link" href="">works</a>
-                    <a class="section-header-nav__link" href="">our team</a>
-                    <a class="section-header-nav__link" href="">testimonials</a>
-                    <a class="section-header-nav__link" href="">download</a>
+                    <a class="section-header-nav__link" href="#features">features</a>
+                    <a class="section-header-nav__link" href="#project-items">works</a>
+                    <a class="section-header-nav__link" href="#team">our team</a>
+                    <a class="section-header-nav__link" href="#testimonials">testimonials</a>
+                    <a class="section-header-nav__link" href="#download">download</a>
                 </nav>
             </div>
             <div class="header-mobile">
@@ -31,9 +31,23 @@
                     <img class="header-mobile__logo_dark" src="./src/img/header/logo/ACTIVEBOX.svg" alt="">
                     <img class="header-mobile__logo_white" src="./src/img/header/logo/ACTIVEBOX (1).svg" alt="">
                 </div>
-                <div class="header-mobile__burger">
-                    <img src="./src/img/header/mobile/menu.svg" alt="">
+            </div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <div class="header-mobile-menu__logo">
+                    <img class="header-mobile__logo_dark" src="./src/img/header/logo/ACTIVEBOX.svg" alt="">
+                    <img class="header-mobile__logo_white" src="./src/img/header/logo/ACTIVEBOX (1).svg" alt="">
                 </div>
+                  <li><a class="menu__item" href="#features">features</a></li>
+                  <li><a class="menu__item" href="#project-items">works</a></li>
+                  <li><a class="menu__item" href="#team">our team</a></li>
+                  <li><a class="menu__item" href="#testimonials">testimonials</a></li>
+                  <li><a class="menu__item" href="#download">download</a></li>
+                </ul>
             </div>
             <div class="header__line"></div>
             <section class="header-banner">
@@ -44,7 +58,7 @@
         </div>
     </header>
     <main>
-        <section class="features">
+        <section id="features" class="features">
             <div class="features-cards-container">
                 <div class="features-card">
                     <div class="features-card__img"><img src="./src/img/section-features/icon_1.svg" alt=""></div>
@@ -80,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="project-items">
+        <section id="project-items" class="project-items">
             <div class="project-item-card project-item-card_first">
                 <div class="project-item-card-pic"><img class="project-item-card__img" src="./src/img/section-project-items/work_1.png" alt="">
                 </div>
@@ -146,7 +160,7 @@
                 </a>
             </div>
         </section>
-        <section class="team">
+        <section id="team" class="team">
             <div class="team-cards">
                 <div class="team-card__img">
                     <img src="./src/img/section-team/1.png" alt="">
@@ -155,9 +169,15 @@
                 <div class="team-card__text">founder, ceo</div>
                 <div class="team-card__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
                 <div class="team-card-icons">
-                    <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    <a href="https://www.facebook.com/?locale=ru_RU">
+                        <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                        <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
+                    </a>
+                    <a href="https://ru.linkedin.com/">
+                        <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    </a>
                 </div>
             </div> 
             <div class="team-cards">
@@ -168,9 +188,15 @@
                 <div class="team-card__text">co-founder, developer</div>
                 <div class="team-card__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
                 <div class="team-card-icons">
-                    <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    <a href="https://www.facebook.com/?locale=ru_RU">
+                        <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                        <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
+                    </a>
+                    <a href="https://ru.linkedin.com/">
+                        <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    </a>
                 </div>
             </div> 
             <div class="team-cards">
@@ -181,9 +207,15 @@
                 <div class="team-card__text">ui designer</div>
                 <div class="team-card__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
                 <div class="team-card-icons">
-                    <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    <a href="https://www.facebook.com/?locale=ru_RU">
+                        <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                        <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
+                    </a>
+                    <a href="https://ru.linkedin.com/">
+                        <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    </a>
                 </div>
             </div> 
             <div class="team-cards">
@@ -194,13 +226,19 @@
                 <div class="team-card__text">data scientist</div>
                 <div class="team-card__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
                 <div class="team-card-icons">
-                    <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
-                    <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    <a href="https://www.facebook.com/?locale=ru_RU">
+                        <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                        <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
+                    </a>
+                    <a href="https://ru.linkedin.com/">
+                        <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials">
             <div class="testimonials-container">
                 <div class="testimonials__img">
                     <img src="./src/img/section-testimonials/bg.png" alt="">
@@ -218,7 +256,7 @@
                 <img src="./src/img/section-testimonials/slide_control_normal.svg" alt="" class="testimonials-dots__img">
             </div>
         </section>
-        <section class="download">
+        <section id="download" class="download">
             <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
             <h5 class="download__text">Fusce dapibus, tellus ac cursus commodo</h5>
             <div class="download__button">download here</div>
@@ -234,9 +272,15 @@
             <div class="footer-container-share">
                 <h5 class="footer-container-share__title">Share with Love</h5>
                 <div class="footer-container-share-icons">
-                    <img src="./src/img/footer/facebook_icon.svg" alt="" class="footer-container-share-icons__img">
-                    <img src="./src/img/footer/twitter_icon.svg" alt="" class="footer-container-share-icons__img">
-                    <img src="./src/img/footer/linkedin_icon.svg" alt="" class="footer-container-share-icons__img">
+                    <a href="https://www.facebook.com/?locale=ru_RU">
+                        <img class="team-card-icons__img" src="./src/img/section-team/facebook_icon.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru">
+                        <img class="team-card-icons__img" src="./src/img/section-team/twitter_icon.svg" alt="">
+                    </a>
+                    <a href="https://ru.linkedin.com/">
+                        <img class="team-card-icons__img" src="./src/img/section-team/linkedin_icon.svg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="footer-container-about">

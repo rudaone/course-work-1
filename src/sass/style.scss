@@ -7,6 +7,7 @@
 html{
     width: 100%;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .header-body{
@@ -55,6 +56,23 @@ html{
     line-height:10px;
     position: relative;
     letter-spacing: 0.3px;
+    transition: .3s;
+}
+
+.section-header-nav__link::after{
+    top: 62px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.section-header-nav__link:hover::after{
+    opacity: 1;
 }
 
 .header-mobile{
@@ -91,17 +109,6 @@ html{
     width: 1170px;
     height: 0;
     border-bottom:1px solid rgba(186, 187, 197, 1) ;
-    
-}
-
-.section-header-nav__link:hover::after{
-    top: 62px;
-    content: "";
-    display: block;
-    position: absolute;
-    background: rgb(255, 255, 255);
-    width: 100%;
-    height: 3px;
 }
 
 .section-header-nav__link:active::after{
@@ -125,7 +132,6 @@ html{
     align-items: center;  
     color: rgba(255, 255, 255, 1);
     margin-top: 130px;
-
 }
 
 .header-banner__title{
@@ -220,6 +226,7 @@ html{
     text-transform: uppercase;
     color: rgba(45, 48, 51, 1);
 }
+
 .features-card__description{
     width: 370px;
     height: 84px;
@@ -269,7 +276,6 @@ html{
     display: flex;
     position: relative;
     opacity: 0;
-    
 }
 
 .project-item-card-text:hover{
@@ -396,7 +402,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .testimonials__img{
@@ -460,7 +465,6 @@ html{
     margin-top: 114px;
     flex-direction: column;
     margin: 114px auto;
-
 }
 
 .download__title{
@@ -519,7 +523,6 @@ html{
     width: 100%;
     height: 340px;
     margin: 0 auto;
-
 }
 
 .footer-body{
@@ -573,7 +576,6 @@ html{
     justify-content: space-between;
     margin-top: 71px;
     font-family: 'Raleway';
-
 }
 
 
@@ -684,7 +686,6 @@ html{
         width: 112px;
         height: 28px;
         font-size: 12px;
-
     }
 
     .header__line{
@@ -701,7 +702,6 @@ html{
         width: 314px;
         height: 80px;
         margin-top: 90px;
-
     }
 
     .header-banner__title{
@@ -724,7 +724,6 @@ html{
         align-self: center;
         width: 100%;
         margin-top: 78px;
-        
     }
 
     .features-card{
@@ -772,7 +771,6 @@ html{
     .project-item-card, .project-item-card-text, .project-item-card-pic, .project-item-card__img {
         width: 255px;
         height: 230px;
-        
     }
 
     .project-item-card__title{
@@ -780,7 +778,6 @@ html{
         height: 40px;
         font-size: 18px;
         margin-top: 75px;
-        
     }
 
     .project-item-card__text{
@@ -837,7 +834,6 @@ html{
         font-size: 14px;
         margin-top: 22px;
         font-weight: 400;
-        
     }
 
     .team-card-icons{
@@ -865,7 +861,6 @@ html{
     .testimonials__img img{
         width: 502px;
         height: 332px;
-
     }
 
     .testimonials-text{
@@ -940,7 +935,6 @@ html{
     .footer-container-share{
         width: 314px;
         height: 82px;
-
     }
 
     .footer-container-share-icons{
@@ -1036,7 +1030,6 @@ html{
         width: 280px;
         height: 60px;
         margin-top: 50px;
-
     }
 
     .header-banner__title{
@@ -1317,13 +1310,12 @@ html{
     }
  }
 
- #menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
+    #menu__toggle {
+        opacity: 0;
+    }
   .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -1332,7 +1324,7 @@ html{
     cursor: pointer;
     z-index: 1;
   }
-  /* добавляем "гамбургер" */
+
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -1351,7 +1343,6 @@ html{
     top: 8px;
   }
   
-  /* контейнер меню */
   .menu__box {
     display: block;
     position: fixed;
